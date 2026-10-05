@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Netzwerk dokumentieren in kleinen Firmen | NetDoc</title>
+  <meta name="description" content="Was gehört in die Netzwerkdokumentation einer kleinen Firma? Geräte, IPs, VLANs, Verkabelung, Zugänge und Fristen – mit Mindestumfang und Checkliste.">
+  <link rel="canonical" href="https://getnetdoc.com/ratgeber/netzwerk-dokumentieren.html">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://getnetdoc.com/ratgeber/netzwerk-dokumentieren.html">
+  <meta property="og:title" content="Netzwerk dokumentieren in kleinen Firmen – so geht’s">
+  <meta property="og:description" content="Was gehört in die Netzwerkdokumentation einer kleinen Firma? Mindestumfang, Aktualität, Excel oder Tool – mit Checkliste.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="ratgeber.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Netzwerk dokumentieren in kleinen Firmen – so geht’s",
+    "description": "Was gehört in die Netzwerkdokumentation einer kleinen Firma? Geräte, IPs, VLANs, Verkabelung, Zugänge und Fristen – mit Mindestumfang und Checkliste.",
+    "inLanguage": "de",
+    "datePublished": "2026-10-05",
+    "dateModified": "2026-10-05",
+    "mainEntityOfPage": "https://getnetdoc.com/ratgeber/netzwerk-dokumentieren.html",
+    "author": { "@type": "Organization", "name": "NetDoc", "url": "https://getnetdoc.com/" },
+    "publisher": { "@type": "Organization", "name": "NetDoc", "url": "https://getnetdoc.com/" }
+  }
+  </script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></svg></span>
+      NetDoc
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html#funktionen">Funktionen</a>
+      <a href="../index.html#installation">Installation</a>
+      <a href="../index.html#preise">Preise</a>
+      <a href="../index.html#faq">Fragen</a>
+      <a class="btn btn-primary btn-sm" href="../index.html#preise">Kostenlos testen</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article class="article">
+    <p class="crumbs"><a href="../index.html">Start</a> › <a href="index.html">Ratgeber</a> › Netzwerk dokumentieren</p>
+    <h1>Netzwerk dokumentieren in kleinen Firmen – so geht’s</h1>
+    <p class="lead">In vielen kleinen Firmen steckt die Netzwerkdokumentation im Kopf einer einzigen Person. Das geht gut, bis diese Person im Urlaub ist, krank wird oder das Unternehmen verlässt. Dieser Ratgeber zeigt, was Sie dokumentieren sollten, womit Sie anfangen und wie die Dokumentation aktuell bleibt.</p>
+    <p class="meta">Ratgeber · Stand: Oktober 2026</p>
+
+    <h2>Warum überhaupt dokumentieren?</h2>
+    <p>Eine gute Dokumentation beantwortet die Fragen, die im Alltag und im Störungsfall immer wieder auftauchen:</p>
+    <ul>
+      <li>An welchem Switch-Port hängt der Drucker im zweiten Stock?</li>
+      <li>Welche IP-Adresse hat die Firewall, und wer kennt das Admin-Passwort?</li>
+      <li>Wann läuft der Wartungsvertrag für den Server aus, und bis wann muss gekündigt werden?</li>
+      <li>Welcher Dienstleister ist für die Telefonanlage zuständig, und wie erreicht man ihn?</li>
+    </ul>
+    <p>Wer diese Antworten schnell findet, spart bei jeder Störung Zeit. Außerdem kann eine Vertretung oder ein externer Techniker arbeiten, ohne erst stundenlang das Netz zu erkunden.</p>
+
+    <h2>Was gehört in die Netzwerkdokumentation?</h2>
+
+    <h3>1. Geräte (Inventar)</h3>
+    <p>Alles mit Netzwerkanschluss: Router, Firewall, Switches, Access Points, Server, NAS, Drucker, Telefonanlage, aber auch PCs und Notebooks. Pro Gerät mindestens:</p>
+    <ul>
+      <li>eindeutiger Name, Typ, Hersteller und Modell</li>
+      <li>Standort (Gebäude, Raum, ggf. Rack und Höheneinheit)</li>
+      <li>Seriennummer und, falls vorhanden, Inventarnummer</li>
+      <li>Kaufdatum und Garantie bis</li>
+      <li>Firmware- bzw. Betriebssystemstand bei Infrastrukturgeräten</li>
+    </ul>
+
+    <h3>2. IP-Adressen, Netze und VLANs</h3>
+    <p>Notieren Sie jedes Netz mit Adressbereich, Gateway, DHCP-Bereich und VLAN-ID. Statische Adressen (Server, Drucker, Switches, Kameras) gehören einzeln mit Gerät dazu. Ein typisches kleines Netz hat zum Beispiel VLANs für Clients, Server, Telefonie, Gäste-WLAN und Management. Halten Sie auch fest, welches WLAN (SSID) in welches VLAN führt.</p>
+
+    <h3>3. Verkabelung</h3>
+    <p>Hier scheitern die meisten Dokumentationen, weil es mühsam ist. Gerade die Verkabelung spart aber im Störungsfall am meisten Zeit. Dokumentiert wird die Strecke vom Switch-Port über das Patchfeld zur Netzwerkdose und weiter zum Endgerät. Wie Sie das sauber aufbauen, steht im Ratgeber <a href="netzwerkdosen-patchfelder-dokumentieren.html">Netzwerkdosen und Patchfelder dokumentieren</a>; die <a href="../downloads/netdoc-patchliste-vorlage.xlsx">kostenlose Excel-Vorlage für die Patchliste</a> können Sie direkt verwenden.</p>
+
+    <h3>4. Zugangsdaten</h3>
+    <p>Admin-Zugänge zu Firewall, Switches, WLAN-Controller, Servern, Provider-Portalen und Cloud-Diensten. Wichtig: Passwörter gehören <strong>nicht</strong> im Klartext in eine Excel-Datei auf dem Fileserver. Nutzen Sie einen Passwortmanager mit Zugriffsrechten und dokumentieren Sie in der Netzwerkdoku, <em>wo</em> das Passwort liegt, nicht das Passwort selbst. Legen Sie außerdem fest, wer im Notfall Zugriff bekommt.</p>
+
+    <h3>5. Software, Lizenzen und Verträge</h3>
+    <p>Lizenzen (Anzahl, Laufzeit, Lizenzschlüssel), Wartungs- und Supportverträge, Internetanschluss, Telefonie, Leasing. Entscheidend sind Laufzeitende, Kündigungsfrist, Vertragsnummer und Ansprechpartner beim Lieferanten.</p>
+
+    <h3>6. Fristen</h3>
+    <p>Vieles in der IT läuft still ab: SSL-Zertifikate, Domains, Garantien, Supportende von Firmware, Abos. Eine Frist, die nur in einer Tabelle steht, wird leicht übersehen. Fristen brauchen eine Erinnerung, die jemand tatsächlich bekommt, etwa per E-Mail an ein Sammelpostfach.</p>
+
+    <h2>Der Mindestumfang: womit Sie anfangen</h2>
+    <p>Eine vollständige Dokumentation entsteht nicht an einem Nachmittag. Beginnen Sie mit dem, was im Störungsfall am meisten hilft:</p>
+    <ol>
+      <li><strong>Netzplan in groben Zügen:</strong> Internetanschluss → Firewall → Core-Switch → weitere Switches und Access Points.</li>
+      <li><strong>Infrastrukturgeräte</strong> mit IP-Adresse, Standort und Hinweis, wo die Zugangsdaten liegen.</li>
+      <li><strong>Netze und VLANs</strong> mit Adressbereichen.</li>
+      <li><strong>Kontakte:</strong> Provider, IT-Dienstleister, Hersteller-Support, jeweils mit Kunden- oder Vertragsnummer.</li>
+      <li><strong>Die drei wichtigsten Fristen:</strong> meist Domain, Zertifikat und Wartungsvertrag des Servers.</li>
+    </ol>
+    <p>Danach folgen Endgeräte, Verkabelung und Lizenzen, am besten Raum für Raum oder Switch für Switch. Wer bei jedem Einsatz vor Ort „nebenbei“ einen Bereich nachträgt, ist nach einigen Wochen erstaunlich weit.</p>
+
+    <h2>So bleibt die Dokumentation aktuell</h2>
+    <p>Eine veraltete Dokumentation ist gefährlich, weil man ihr vertraut. Diese Regeln haben sich bewährt:</p>
+    <ul>
+      <li><strong>Dokumentieren gehört zur Aufgabe.</strong> Ein neuer Switch ist erst fertig, wenn er dokumentiert ist. Planen Sie die paar Minuten bei jedem Auftrag ein.</li>
+      <li><strong>Eine Quelle.</strong> Nicht die Liste auf dem Fileserver, die Notiz im Handy und das Whiteboard im Serverraum. Es gibt genau einen Ort, alles andere ist abgeleitet.</li>
+      <li><strong>Vor Ort zugänglich.</strong> Wenn Sie im Serverraum stehen, muss die Doku erreichbar sein, zum Beispiel am Handy. Sonst wird „später nachgetragen“, und das passiert selten.</li>
+      <li><strong>Etiketten an der Hardware.</strong> Beschriftete Dosen, Patchfelder und Geräte verbinden die Doku mit der Wirklichkeit.</li>
+      <li><strong>Regelmäßig prüfen.</strong> Einmal im Halbjahr stichprobenartig ein paar Ports und Geräte vergleichen. Abweichungen zeigen, wo der Prozess hakt.</li>
+      <li><strong>Änderungen nachvollziehbar.</strong> Wer hat wann was geändert? Bei mehreren Admins oder einem externen Dienstleister ist das Gold wert.</li>
+    </ul>
+
+    <h2>Excel oder Dokumentations-Tool?</h2>
+    <p>Excel ist für viele der erste Schritt, und das ist in Ordnung. Ehrlicher Vergleich:</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Kriterium</th><th>Excel / Tabellen</th><th>Dokumentations-Tool</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Einstieg</td><td>sofort, keine Kosten</td><td>Installation bzw. Einrichtung nötig</td></tr>
+          <tr><td>Zusammenhänge (Port → Dose → Gerät)</td><td>nur über Querverweise per Hand</td><td>verknüpft, Strecke auf einen Blick</td></tr>
+          <tr><td>Mehrere Bearbeiter</td><td>Konflikte, Kopien, „final_v3.xlsx“</td><td>gleichzeitig, mit Rechten</td></tr>
+          <tr><td>Passwörter</td><td>ungeeignet</td><td>verschlüsselt, mit Zugriffsrechten (je nach Tool)</td></tr>
+          <tr><td>Fristen</td><td>keine Erinnerung</td><td>Erinnerung per E-Mail möglich</td></tr>
+          <tr><td>Änderungsverlauf</td><td>kaum</td><td>meist vorhanden</td></tr>
+          <tr><td>Am Handy im Serverraum</td><td>mühsam</td><td>je nach Tool gut</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Faustregel: Für ein Büro mit einem Switch und zehn Geräten reicht eine gepflegte Tabelle. Sobald mehrere Switches, Patchfelder, VLANs oder mehrere Personen ins Spiel kommen, wird Excel zur Fehlerquelle. Gute Nachricht: Eine sauber aufgebaute Tabelle ist kein verlorener Aufwand. Die meisten Tools können sie importieren.</p>
+
+    <aside class="product-box">
+      <h2>So geht’s mit NetDoc</h2>
+      <p>NetDoc ist eine selbst gehostete Dokumentation für kleine und mittlere IT: Geräte mit Racks und eigenen Feldern, VLANs und IP-Adressen, Verkabelung bis zur Dose, verschlüsselte Zugangsdaten, Lizenzen, Verträge mit Kündigungsfristen und Termine mit E-Mail-Erinnerung. Bestehende Listen übernehmen Sie per CSV- oder Excel-Import, Patchlisten über „Import → Verkabelung / Patchliste“. Bis 25 Geräte ist NetDoc kostenlos.</p>
+      <div class="ctas">
+        <a class="btn btn-primary btn-sm" href="https://github.com/guschlbauermichael93/getnetdoc-website/releases/latest/download/netdoc.zip">Kostenlos herunterladen</a>
+        <a class="btn btn-ghost btn-sm" href="../index.html#preise">Preise ansehen</a>
+      </div>
+    </aside>
+
+    <h2>Typische Fehler</h2>
+    <ul>
+      <li><strong>Zu viel auf einmal:</strong> Wer mit dem perfekten Schema für alles startet, gibt oft nach zwei Wochen auf. Lieber klein anfangen und erweitern.</li>
+      <li><strong>Nur Geräte, keine Zusammenhänge:</strong> Eine Geräteliste ohne Verkabelung und Netze hilft im Störungsfall wenig.</li>
+      <li><strong>Passwörter in der Tabelle:</strong> Eine Datei, die alles enthält, ist für Angreifer ein Volltreffer.</li>
+      <li><strong>Doku nur digital auf dem Server, den sie beschreibt:</strong> Fällt der Server aus, ist auch die Doku weg. Für den Notfall gehört ein Auszug auf Papier oder offline daneben, siehe <a href="it-notfallhandbuch.html">IT-Notfallhandbuch erstellen</a>.</li>
+      <li><strong>Uneinheitliche Namen:</strong> „SW1“, „Switch EG“ und „HP-2530“ für dasselbe Gerät machen jede Suche zum Ratespiel. Legen Sie ein Namensschema fest.</li>
+    </ul>
+
+    <h2>Checkliste</h2>
+    <ul class="checklist">
+      <li>Namensschema für Geräte, Dosen und Patchfelder festgelegt</li>
+      <li>Grober Netzplan vom Internetanschluss bis zu den Access-Switches</li>
+      <li>Alle Infrastrukturgeräte mit IP, Standort und Seriennummer</li>
+      <li>Netze und VLANs mit Adressbereich, Gateway und DHCP</li>
+      <li>Zugangsdaten im Passwortmanager, Notfallzugriff geregelt</li>
+      <li>Verkabelung zumindest für Server, Drucker und Access Points</li>
+      <li>Lizenzen und Verträge mit Laufzeitende und Kündigungsfrist</li>
+      <li>Erinnerungen für Zertifikate, Domains und Verträge eingerichtet</li>
+      <li>Kontakte von Provider, Dienstleister und Hersteller-Support</li>
+      <li>Ein Ort für die Doku, vor Ort erreichbar, plus Offline-Auszug für den Notfall</li>
+    </ul>
+
+    <div class="related">
+      <h2>Weiterlesen</h2>
+      <ul>
+        <li><a href="netzwerkdosen-patchfelder-dokumentieren.html">Netzwerkdosen und Patchfelder dokumentieren (mit Excel-Vorlage)</a></li>
+        <li><a href="it-notfallhandbuch.html">IT-Notfallhandbuch erstellen – Inhalt, Vorlage und NIS2</a></li>
+      </ul>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 NetDoc · Michael Guschlbauer · Entwickelt in Österreich</span>
+    <nav>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+      <a href="../kaufbedingungen.html">Kauf- &amp; Lizenzbedingungen</a>
+      <a href="mailto:support@getnetdoc.com">support@getnetdoc.com</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

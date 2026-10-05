@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Netzwerkdosen &amp; Patchfelder dokumentieren | NetDoc</title>
+  <meta name="description" content="Netzwerkdosen und Patchfelder sauber dokumentieren: Namensschema, Beschriftung, Patchliste mit allen Spalten – inklusive kostenloser Excel-Vorlage.">
+  <link rel="canonical" href="https://getnetdoc.com/ratgeber/netzwerkdosen-patchfelder-dokumentieren.html">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://getnetdoc.com/ratgeber/netzwerkdosen-patchfelder-dokumentieren.html">
+  <meta property="og:title" content="Netzwerkdosen und Patchfelder dokumentieren">
+  <meta property="og:description" content="Namensschema, Beschriftung und Patchliste für Dosen und Patchfelder – mit kostenloser Excel-Vorlage.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="ratgeber.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Netzwerkdosen und Patchfelder dokumentieren",
+    "description": "Netzwerkdosen und Patchfelder sauber dokumentieren: Namensschema, Beschriftung, Patchliste mit allen Spalten – inklusive kostenloser Excel-Vorlage.",
+    "inLanguage": "de",
+    "datePublished": "2026-10-05",
+    "dateModified": "2026-10-05",
+    "mainEntityOfPage": "https://getnetdoc.com/ratgeber/netzwerkdosen-patchfelder-dokumentieren.html",
+    "author": { "@type": "Organization", "name": "NetDoc", "url": "https://getnetdoc.com/" },
+    "publisher": { "@type": "Organization", "name": "NetDoc", "url": "https://getnetdoc.com/" }
+  }
+  </script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></svg></span>
+      NetDoc
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html#funktionen">Funktionen</a>
+      <a href="../index.html#installation">Installation</a>
+      <a href="../index.html#preise">Preise</a>
+      <a href="../index.html#faq">Fragen</a>
+      <a class="btn btn-primary btn-sm" href="../index.html#preise">Kostenlos testen</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article class="article">
+    <p class="crumbs"><a href="../index.html">Start</a> › <a href="index.html">Ratgeber</a> › Netzwerkdosen und Patchfelder</p>
+    <h1>Netzwerkdosen und Patchfelder dokumentieren</h1>
+    <p class="lead">„Welcher Switch-Port gehört zur Dose im Besprechungsraum?“ – Wer diese Frage ohne Kabelsuche beantworten kann, hat seine passive Verkabelung im Griff. Dieser Ratgeber zeigt ein praxistaugliches Namensschema, die nötigen Spalten einer Patchliste und wie Sie die Strecke vom Switch bis zum Endgerät nachvollziehbar machen.</p>
+    <p class="meta">Ratgeber · Stand: Oktober 2026</p>
+
+    <div class="download">
+      <p><strong>Kostenlose Excel-Vorlage:</strong> Patchliste mit allen Spalten aus diesem Artikel, sofort einsetzbar.</p>
+      <a class="btn btn-primary btn-sm" href="../downloads/netdoc-patchliste-vorlage.xlsx" download>Vorlage herunterladen (.xlsx)</a>
+    </div>
+
+    <h2>Die Strecke verstehen: aktiv und passiv</h2>
+    <p>In einer strukturierten Verkabelung führt eine Verbindung typischerweise über diese Stationen:</p>
+    <ol>
+      <li><strong>Switch-Port</strong> (aktive Komponente im Rack)</li>
+      <li><strong>Patchkabel</strong> zur <strong>Vorderseite des Patchfelds</strong></li>
+      <li><strong>Installationskabel</strong> von der <strong>Rückseite des Patchfelds</strong> durch Wand oder Kabelkanal zur <strong>Rückseite der Netzwerkdose</strong></li>
+      <li><strong>Patchkabel</strong> von der <strong>Vorderseite der Dose</strong> zum <strong>Endgerät</strong></li>
+    </ol>
+    <p>Das Installationskabel zwischen Patchfeld und Dose ist fest verlegt und ändert sich praktisch nie. Die Patchkabel vorne ändern sich dagegen ständig: Ein Arbeitsplatz zieht um, ein Drucker kommt dazu, ein Port wird in ein anderes VLAN gelegt. Diese Trennung hilft beim Dokumentieren: Die feste Verbindung Patchfeld-Port ↔ Dose dokumentieren Sie einmal (am besten direkt bei der Installation, der Elektriker oder Verkabler liefert oft ein Messprotokoll), die Patchung vorne pflegen Sie laufend.</p>
+
+    <h2>Ein Namensschema für Dosen</h2>
+    <p>Der wichtigste Schritt ist ein einheitliches Schema. Zwei verbreitete Varianten:</p>
+
+    <h3>Variante 1: Stockwerk und laufende Nummer – „1.23“</h3>
+    <p>Die Zahl vor dem Punkt ist das Stockwerk, danach folgt eine laufende Nummer pro Stockwerk. „1.23“ ist also Dose 23 im ersten Stock. Einfach, kurz, gut lesbar. Nachteil: Man sieht nicht, an welchem Patchfeld die Dose hängt.</p>
+
+    <h3>Variante 2: Verteiler, Patchfeld und Port – „A1.12-1“</h3>
+    <p>Das Schema bildet die Verkabelung direkt ab: Verteiler bzw. Rack <strong>A</strong>, Patchfeld <strong>1</strong>, Port <strong>12</strong>, Buchse <strong>1</strong> einer Doppeldose. Die zweite Buchse derselben Dose heißt dann „A1.12-2“ und liegt meist auf dem nächsten Patchfeld-Port. Vorteil: Wer vor der Dose steht, weiß sofort, wo sie im Rack ankommt. Nachteil: Bei einer Umverkabelung stimmt der Name nicht mehr.</p>
+
+    <h3>Worauf es ankommt</h3>
+    <ul>
+      <li><strong>Eindeutig pro Standort.</strong> Dieselbe Dosennummer darf es an einem Standort nur einmal geben.</li>
+      <li><strong>Doppeldosen als zwei Anschlüsse.</strong> Jede Buchse bekommt eine eigene Bezeichnung, sonst ist unklar, welches Kabel gemeint ist.</li>
+      <li><strong>Keine Raumnamen im Dosennamen.</strong> Räume werden umbenannt („Büro Huber“ → „Besprechung 2“), Dosen nicht. Den Raum führen Sie als eigene Spalte.</li>
+      <li><strong>Bestehendes übernehmen.</strong> Wenn Dosen bereits beschriftet sind, behalten Sie das Schema bei, auch wenn es nicht ideal ist. Eine Umbenennung aller Dosen kostet viel Zeit und erzeugt Fehler.</li>
+    </ul>
+
+    <h2>Beschriftung vor Ort</h2>
+    <p>Die beste Liste hilft wenig, wenn die Dose unbeschriftet ist. Beschriften Sie:</p>
+    <ul>
+      <li><strong>Dosen</strong> mit dem Dosennamen, gut lesbar auch unter dem Schreibtisch.</li>
+      <li><strong>Patchfelder</strong> mit Namen am Feld und Nummern an jedem Port (meist schon aufgedruckt).</li>
+      <li><strong>Patchkabel</strong> optional an beiden Enden mit einer Kabelnummer oder dem Ziel – bei vollen Racks spart das viel Sucherei.</li>
+      <li><strong>Switches</strong> mit dem Gerätenamen aus der Dokumentation.</li>
+    </ul>
+    <p>Nutzen Sie ein Etikettendrucker-Band, das hält; handschriftliche Aufkleber sind nach zwei Jahren unlesbar. Zusätzlich praktisch: ein QR-Code auf dem Etikett, der direkt auf den Eintrag in der Dokumentation führt.</p>
+
+    <h2>Die Patchliste: diese Spalten brauchen Sie</h2>
+    <p>Eine Zeile entspricht einer Verbindung von einem Switch-Port bis zum Endgerät. Nicht jede Zeile muss alle Spalten füllen: Ein Access Point direkt im Rack hat weder Patchfeld noch Dose.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Spalte</th><th>Inhalt</th><th>Beispiel</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Standort</td><td>Gebäude bzw. Niederlassung</td><td>Zentrale Linz</td></tr>
+          <tr><td>Raum</td><td>Raum, in dem die Dose liegt</td><td>1.04 Buchhaltung</td></tr>
+          <tr><td>Switch</td><td>Gerätename des Switches</td><td>SW-Core-01</td></tr>
+          <tr><td>Switch-Port</td><td>Port wie in der Switch-Konfiguration</td><td>Gi1/0/12</td></tr>
+          <tr><td>Patchfeld</td><td>Name des Patchfelds</td><td>PP-A1</td></tr>
+          <tr><td>Patchfeld-Port</td><td>Port-Nummer am Patchfeld</td><td>12</td></tr>
+          <tr><td>Dose</td><td>Dosenname nach Ihrem Schema</td><td>A1.12-1</td></tr>
+          <tr><td>Endgerät</td><td>Was an der Dose steckt</td><td>PC-BH-03</td></tr>
+          <tr><td>Endgerät-Port</td><td>Netzwerkanschluss am Endgerät</td><td>LAN1</td></tr>
+          <tr><td>VLAN</td><td>Access-VLAN des Switch-Ports</td><td>10</td></tr>
+          <tr><td>Kabeltyp</td><td>Kategorie bzw. Medium</td><td>Cat6a</td></tr>
+          <tr><td>Kabelfarbe</td><td>Farbe des Patchkabels</td><td>blau</td></tr>
+          <tr><td>Länge</td><td>Länge des Patchkabels in Metern</td><td>2</td></tr>
+          <tr><td>Kabel-Nr</td><td>Beschriftung am Kabel</td><td>K-0412</td></tr>
+          <tr><td>Bemerkung</td><td>alles Weitere</td><td>PoE, Telefon durchgeschleift</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Tipp für Farben: Viele Admins legen eine Farbe pro Zweck fest, etwa Blau für Clients, Gelb für Telefonie, Rot für Uplinks, Grün für Server. Schreiben Sie diese Konvention einmal auf, sonst entsteht mit jeder Kabelbestellung eine neue.</p>
+
+    <h2>Eine Verbindung nachverfolgen</h2>
+    <p>Mit vollständiger Patchliste lässt sich jede Frage in beide Richtungen beantworten:</p>
+    <ul>
+      <li><strong>Vom Switch zur Dose:</strong> Port Gi1/0/12 zeigt Fehler → Patchfeld PP-A1 Port 12 → Dose A1.12-1 → PC-BH-03 in der Buchhaltung.</li>
+      <li><strong>Von der Dose zum Switch:</strong> Ein Mitarbeiter meldet „kein Netz an Dose 1.23“ → Patchfeld-Port → Switch-Port → VLAN prüfen.</li>
+    </ul>
+    <p>Im Excel bedeutet das Filtern und Suchen in einer Tabelle. Achten Sie darauf, dass Switch- und Portnamen exakt so geschrieben sind wie in der Switch-Konfiguration, sonst führt die Suche ins Leere.</p>
+
+    <h2>Grundrisse: Wo ist Dose 1.23?</h2>
+    <p>Eine Liste sagt, dass Dose 1.23 im Raum 1.04 liegt – aber nicht, an welcher Wand. Ein Grundriss mit eingezeichneten Dosen spart vor allem in großen Räumen und Großraumbüros viel Sucherei. Hat der Elektroplaner einen Plan geliefert, nutzen Sie ihn. Sonst reicht ein Fluchtwegplan oder eine einfache Skizze als Grundlage. Zeichnen Sie Access Points, Drucker und Racks gleich mit ein.</p>
+
+    <aside class="product-box">
+      <h2>So geht’s mit NetDoc</h2>
+      <p>NetDoc importiert genau diese Patchliste: Unter „Import → Verkabelung / Patchliste“ laden Sie die Excel-Vorlage hoch, die Vorschau zeigt vor dem Übernehmen, was angelegt wird und welche Namen noch zugeordnet werden müssen. Switches und Patchfelder legen Sie vorher an; Dosen und Endgeräte kann der Import auf Wunsch mit anlegen. Danach zeigt ein Klick auf einen Switch-Port die ganze Strecke über Patchfeld und Dose bis zum Endgerät. Dosen, Access Points und Racks platzieren Sie auf dem Grundriss (Bild oder PDF), und für Dosen, Patchfelder und Geräte drucken Sie QR-Etiketten, die direkt zum Eintrag führen. Bis 25 Geräte ist NetDoc kostenlos; Dosen, Patchfelder und Kabel zählen dabei nicht als Geräte.</p>
+      <div class="ctas">
+        <a class="btn btn-primary btn-sm" href="https://github.com/guschlbauermichael93/getnetdoc-website/releases/latest/download/netdoc.zip">Kostenlos herunterladen</a>
+        <a class="btn btn-ghost btn-sm" href="../index.html#preise">Preise ansehen</a>
+      </div>
+    </aside>
+
+    <h2>Häufige Stolpersteine</h2>
+    <ul>
+      <li><strong>Liste nur einmal erstellt:</strong> Nach dem ersten Umpatchen stimmt sie nicht mehr. Machen Sie die Aktualisierung zum festen Teil jeder Änderung im Rack.</li>
+      <li><strong>Vorder- und Rückseite vermischt:</strong> Halten Sie die feste Verkabelung (Patchfeld ↔ Dose) und die Patchung (Switch ↔ Patchfeld, Dose ↔ Endgerät) gedanklich getrennt.</li>
+      <li><strong>Unterschiedliche Schreibweisen:</strong> „Gi1/0/12“, „GigabitEthernet1/0/12“ und „Port 12“ für denselben Port erschweren Suche und Import.</li>
+      <li><strong>Tote Dosen:</strong> Unverkabelte oder defekte Dosen trotzdem aufnehmen und als solche markieren, sonst werden sie bei der nächsten Störung erneut „entdeckt“.</li>
+    </ul>
+
+    <h2>Checkliste</h2>
+    <ul class="checklist">
+      <li>Namensschema für Dosen festgelegt, eindeutig pro Standort</li>
+      <li>Doppeldosen als zwei Anschlüsse geführt</li>
+      <li>Feste Verkabelung Patchfeld-Port ↔ Dose erfasst (Messprotokoll anfordern)</li>
+      <li>Patchliste mit Switch-Port, Patchfeld-Port, Dose und Endgerät</li>
+      <li>Portnamen exakt wie in der Switch-Konfiguration</li>
+      <li>VLAN pro Switch-Port eingetragen</li>
+      <li>Farbkonvention für Patchkabel aufgeschrieben</li>
+      <li>Dosen, Patchfelder und Switches dauerhaft beschriftet</li>
+      <li>Dosen auf dem Grundriss eingezeichnet</li>
+      <li>Aktualisierung bei jeder Umpatchung fest eingeplant</li>
+    </ul>
+
+    <div class="related">
+      <h2>Weiterlesen</h2>
+      <ul>
+        <li><a href="netzwerk-dokumentieren.html">Netzwerk dokumentieren in kleinen Firmen – so geht’s</a></li>
+        <li><a href="it-notfallhandbuch.html">IT-Notfallhandbuch erstellen – Inhalt, Vorlage und NIS2</a></li>
+      </ul>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 NetDoc · Michael Guschlbauer · Entwickelt in Österreich</span>
+    <nav>
+      <a href="../impressum.html">Impressum</a>
+      <a href="../datenschutz.html">Datenschutz</a>
+      <a href="../kaufbedingungen.html">Kauf- &amp; Lizenzbedingungen</a>
+      <a href="mailto:support@getnetdoc.com">support@getnetdoc.com</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

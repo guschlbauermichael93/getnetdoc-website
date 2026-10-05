@@ -1,6 +1,6 @@
 NETDOC SOFTWARE-LIZENZVEREINBARUNG
 
-Copyright (c) 2025 Michael Guschlbauer. Alle Rechte vorbehalten.
+Copyright (c) 2025-2026 Michael Guschlbauer. Alle Rechte vorbehalten.
 
 WICHTIG: LESEN SIE DIESE LIZENZVEREINBARUNG SORGFÄLTIG DURCH, BEVOR SIE
 DIE SOFTWARE INSTALLIEREN ODER VERWENDEN.
@@ -51,8 +51,10 @@ GEZAHLTEN BETRAG BESCHRÄNKT.
 6. DATENSCHUTZ
 
 Die Software speichert alle Daten lokal auf Ihrem Server. Es werden
-keine Daten an den Lizenzgeber übermittelt, mit Ausnahme einer
-optionalen Lizenzvalidierung.
+keine Daten an den Lizenzgeber übermittelt; der Lizenzschlüssel wird
+lokal geprüft. Verbindungen zu Dritten entstehen nur durch Funktionen,
+die Sie selbst einrichten (z.B. E-Mail-Versand, Prüfung von
+SSL-Zertifikaten und Domains).
 
 7. BEENDIGUNG
 
@@ -68,7 +70,8 @@ Ausschluss des UN-Kaufrechts.
 9. KONTAKT
 
 Bei Fragen zu dieser Lizenz:
-E-Mail: support@netdoc.at
+E-Mail: support@getnetdoc.com
+Web: https://getnetdoc.com
 
 ---
 
