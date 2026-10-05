@@ -40,7 +40,7 @@
       <h1>IT-Dokumentation, die Sie <span>einmal kaufen</span> – nicht jeden Monat bezahlen.</h1>
       <p class="lead">Geräte, Verkabelung bis zur Netzwerkdose, Lizenzen, Verträge und Passwörter an einem Ort. Auf Ihrem eigenen Server, in wenigen Minuten installiert.</p>
       <div class="ctas">
-        <a class="btn btn-primary" href="#preise">Kostenlos herunterladen</a>
+        <a class="btn btn-primary" href="https://github.com/guschlbauermichael93/getnetdoc-website/releases/latest/download/netdoc.zip">Kostenlos herunterladen</a>
         <a class="btn btn-ghost" href="#funktionen">Funktionen ansehen</a>
       </div>
       <div class="facts">
@@ -171,7 +171,7 @@
       <div class="steps">
         <div class="card">
           <h3>Herunterladen</h3>
-          <p>ZIP herunterladen und auf dem Server entpacken.</p>
+          <p><a href="https://github.com/guschlbauermichael93/getnetdoc-website/releases/latest/download/netdoc.zip">ZIP herunterladen</a> und auf dem Server entpacken.</p>
           <pre class="cmd">unzip netdoc-v*.zip -d /opt</pre>
         </div>
         <div class="card">
@@ -244,8 +244,8 @@ docker compose up -d</pre>
       <div class="included">
         <span>Alle Funktionen in jeder Stufe</span>
         <span>Unbegrenzt viele Benutzer</span>
-        <span>Rechnung mit UID über LemonSqueezy</span>
-        <span>Sichere Zahlung per Karte, PayPal u. a.</span>
+        <span>Rechnung mit UID</span>
+        <span>Sichere Zahlung über Stripe</span>
       </div>
     </div>
   </section>
@@ -275,7 +275,7 @@ docker compose up -d</pre>
         </details>
         <details>
           <summary>Wie bekomme ich meinen Lizenzschlüssel?</summary>
-          <p>Nach dem Kauf erhalten Sie den Download sofort und Ihren persönlichen Lizenzschlüssel per E-Mail, in der Regel innerhalb von 24 Stunden. Eingetragen wird er im Setup-Assistenten oder später unter Einstellungen → Lizenz.</p>
+          <p>NetDoc selbst laden Sie jederzeit kostenlos herunter. Nach dem Kauf erhalten Sie Ihren persönlichen Lizenzschlüssel per E-Mail, in der Regel innerhalb von 24 Stunden. Eingetragen wird er im Setup-Assistenten oder später unter Einstellungen → Lizenz.</p>
         </details>
         <details>
           <summary>Was brauche ich für die Installation?</summary>
@@ -331,9 +331,9 @@ docker compose up -d</pre>
 </footer>
 
 <script>
-  // Kauf-Links von LemonSqueezy hier eintragen (Produkt → Variante → "Share" → Checkout-Link)
+  // Kauf-Links: Stripe → Produkt → Payment Link (je Stufe einer). free = Download (immer neuestes ZIP)
   const CHECKOUT = {
-    free: '',
+    free: 'https://github.com/guschlbauermichael93/getnetdoc-website/releases/latest/download/netdoc.zip',
     small: '',
     medium: '',
     professional: '',
