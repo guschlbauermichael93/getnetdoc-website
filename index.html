@@ -334,11 +334,11 @@ docker compose up -d</pre>
   // Kauf-Links: Stripe → Produkt → Payment Link (je Stufe einer). free = Download (immer neuestes ZIP)
   const CHECKOUT = {
     free: 'https://github.com/guschlbauermichael93/getnetdoc-website/releases/latest/download/netdoc.zip',
-    small: '',
-    medium: '',
-    professional: '',
-    business: '',
-    enterprise: '',
+    small: 'https://buy.stripe.com/8x27sLeso1Qv2wq4x0bjW00',
+    medium: 'https://buy.stripe.com/4gMaEXdok8eT5IC7JcbjW01',
+    professional: 'https://buy.stripe.com/6oUaEX0By7aP4Ey0gKbjW02',
+    business: 'https://buy.stripe.com/3cIdR95VSan1fjc4x0bjW03',
+    enterprise: 'https://buy.stripe.com/bJe8wPckg1Qv7QKe7AbjW04',
   };
   document.querySelectorAll('[data-checkout]').forEach((a) => {
     const url = CHECKOUT[a.dataset.checkout];
