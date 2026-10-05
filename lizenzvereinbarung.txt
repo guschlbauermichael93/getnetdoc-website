@@ -1,0 +1,76 @@
+NETDOC SOFTWARE-LIZENZVEREINBARUNG
+
+Copyright (c) 2025 Michael Guschlbauer. Alle Rechte vorbehalten.
+
+WICHTIG: LESEN SIE DIESE LIZENZVEREINBARUNG SORGFÄLTIG DURCH, BEVOR SIE
+DIE SOFTWARE INSTALLIEREN ODER VERWENDEN.
+
+1. LIZENZGEWÄHRUNG
+
+Mit dem Erwerb einer gültigen Lizenz gewährt Ihnen der Lizenzgeber das
+nicht-exklusive, nicht-übertragbare Recht, die NetDoc-Software ("Software")
+gemäß den Bedingungen dieser Vereinbarung zu nutzen.
+
+Die Lizenz berechtigt zur:
+- Installation auf einem (1) Server
+- Nutzung durch unbegrenzte Benutzer innerhalb Ihrer Organisation
+- Verwaltung von Geräten bis zum lizenzierten Limit
+
+2. LIZENZBESCHRÄNKUNGEN
+
+Sie dürfen NICHT:
+- Die Software unterlizenzieren, vermieten, verleasen oder verleihen
+- Die Software dekompilieren, disassemblieren oder zurückentwickeln
+- Die Lizenzbeschränkungen umgehen oder manipulieren
+- Die Software an Dritte weitergeben oder weiterverkaufen
+- Die Software für illegale Zwecke verwenden
+
+3. UPDATES
+
+Ihre Lizenz beinhaltet Updates für den auf dem Lizenzschlüssel angegebenen
+Zeitraum (standardmäßig 12 Monate ab Kaufdatum). Nach Ablauf dieses Zeitraums:
+- Funktioniert Ihre installierte Version weiterhin uneingeschränkt
+- Für neue Versionen ist eine Update-Verlängerung erforderlich
+
+4. GEWÄHRLEISTUNGSAUSSCHLUSS
+
+DIE SOFTWARE WIRD "WIE BESEHEN" OHNE JEGLICHE AUSDRÜCKLICHE ODER
+STILLSCHWEIGENDE GEWÄHRLEISTUNG BEREITGESTELLT. DER LIZENZGEBER
+ÜBERNIMMT KEINE GEWÄHRLEISTUNG FÜR DIE EIGNUNG FÜR EINEN BESTIMMTEN
+ZWECK, MARKTGÄNGIGKEIT ODER NICHTVERLETZUNG VON RECHTEN DRITTER.
+
+5. HAFTUNGSBESCHRÄNKUNG
+
+IN KEINEM FALL HAFTET DER LIZENZGEBER FÜR INDIREKTE, ZUFÄLLIGE,
+BESONDERE ODER FOLGESCHÄDEN, DIE SICH AUS DER NUTZUNG ODER
+UNMÖGLICHKEIT DER NUTZUNG DER SOFTWARE ERGEBEN.
+
+DIE GESAMTHAFTUNG DES LIZENZGEBERS IST AUF DEN FÜR DIE LIZENZ
+GEZAHLTEN BETRAG BESCHRÄNKT.
+
+6. DATENSCHUTZ
+
+Die Software speichert alle Daten lokal auf Ihrem Server. Es werden
+keine Daten an den Lizenzgeber übermittelt, mit Ausnahme einer
+optionalen Lizenzvalidierung.
+
+7. BEENDIGUNG
+
+Diese Lizenz endet automatisch, wenn Sie gegen eine Bestimmung dieser
+Vereinbarung verstoßen. Bei Beendigung müssen Sie alle Kopien der
+Software vernichten.
+
+8. ANWENDBARES RECHT
+
+Diese Vereinbarung unterliegt dem Recht der Republik Österreich unter
+Ausschluss des UN-Kaufrechts.
+
+9. KONTAKT
+
+Bei Fragen zu dieser Lizenz:
+E-Mail: support@netdoc.at
+
+---
+
+Durch die Installation oder Nutzung der Software erklären Sie sich mit
+den Bedingungen dieser Lizenzvereinbarung einverstanden.
