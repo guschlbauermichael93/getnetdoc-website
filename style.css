@@ -157,6 +157,7 @@ pre.cmd {
 .faq summary::after { content: "+"; color: var(--primary); font-size: 1.4rem; line-height: 1; }
 .faq details[open] summary::after { content: "−"; }
 .faq details p { color: var(--muted); margin: 12px 0 0; }
+.faq details p strong { color: var(--text); }
 
 /* Abschluss */
 .cta-band { text-align: center; background: linear-gradient(180deg, transparent, rgba(59,130,246,.10)); }
