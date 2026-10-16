@@ -305,7 +305,7 @@ docker compose up -d</pre>
         </details>
         <details>
           <summary>Wie funktionieren Updates?</summary>
-          <p>Mit zwei Befehlen: <code>docker compose pull</code> und <code>docker compose up -d</code>. Datenbank-Änderungen spielt NetDoc beim Start automatisch ein. Vorher ein Backup anzulegen, geht mit einem Klick unter Einstellungen → Backup.</p>
+          <p>NetDoc zeigt Administratoren im Dashboard, wenn eine neue Version bereitsteht (abschaltbar). Eingespielt wird sie von Ihnen: in der Datei <code>.env</code> die Zeile <code>NETDOC_VERSION=</code> auf die neue Version setzen, dann <code>docker compose pull</code> und <code>docker compose up -d</code>. Datenbank-Änderungen spielt NetDoc beim Start automatisch ein. Vorher ein Backup anzulegen, geht mit einem Klick unter Einstellungen → Backup. Alle Änderungen: <a href="changelog.html">Versionen</a>.</p>
         </details>
         <details>
           <summary>Gibt es Support?</summary>
@@ -344,6 +344,7 @@ docker compose up -d</pre>
       <a href="datenschutz.html">Datenschutz</a>
       <a href="kaufbedingungen.html">Kauf- &amp; Lizenzbedingungen</a>
       <a href="ratgeber/">Ratgeber</a>
+      <a href="changelog.html">Versionen</a>
       <a href="en/" lang="en" hreflang="en">English</a>
       <a href="downloads/netdoc-patchliste-vorlage.xlsx">Excel-Vorlage Patchliste</a>
       <a href="mailto:support@getnetdoc.com">support@getnetdoc.com</a>

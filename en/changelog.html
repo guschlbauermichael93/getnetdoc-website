@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NetDoc – Releases and changes</title>
+  <meta name="description" content="What's new in NetDoc? All releases with changes and update notes.">
+  <link rel="canonical" href="https://getnetdoc.com/en/changelog.html">
+  <link rel="alternate" hreflang="de" href="https://getnetdoc.com/changelog.html">
+  <link rel="alternate" hreflang="en" href="https://getnetdoc.com/en/changelog.html">
+  <link rel="alternate" hreflang="x-default" href="https://getnetdoc.com/changelog.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../ratgeber/ratgeber.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></svg></span>
+      NetDoc
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#installation">Installation</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#faq">FAQ</a>
+      <a class="lang" href="../changelog.html" hreflang="de" lang="de" title="Deutsche Version">DE</a>
+      <a class="btn btn-primary btn-sm" href="https://github.com/guschlbauermichael93/getnetdoc-website/releases/latest/download/netdoc.zip">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="article">
+    <p class="crumbs"><a href="index.html">Home</a> › Releases</p>
+    <h1>Releases and changes</h1>
+    <p class="lead">What changes in NetDoc from version to version. NetDoc tells administrators on the dashboard when a new release is available – installing it is always up to you.</p>
+
+    <div class="note">
+      <p><strong>Installing an update:</strong> create a backup (Settings → Backup), then on the server set <code>NETDOC_VERSION=</code> in the <code>.env</code> file to the new version and run <code>docker compose pull &amp;&amp; docker compose up -d</code>. The database is upgraded automatically on startup. Details are in <code>INSTALLATION.md</code> inside the installation package.</p>
+    </div>
+
+    <h2 id="v1-2-0">NetDoc 1.2.0 <small style="font-weight:400;color:var(--dim);font-size:.75em">· <time datetime="2026-10-16">16 October 2026</time></small></h2>
+    <h3>New</h3>
+    <ul>
+      <li><strong>Set up sign-in with Microsoft (Entra ID) inside the app.</strong> Tenant ID, application ID and client secret now live under Settings → “Sign-in with Microsoft” instead of the <code>.env</code> file. Includes step-by-step instructions for the Entra portal, the redirect URI ready to copy, and “Check credentials”, which also reports whether the permission for the employee sync has been granted.</li>
+      <li><strong>Employee sync with Entra ID</strong> uses the same app registration – sign-in with Microsoft does not have to be enabled for it.</li>
+      <li><strong>Update notice.</strong> Once a day NetDoc checks whether a new release is available and shows it to administrators on the dashboard and under Settings → Updates, with instructions. Only the installed version number is transmitted; the check can be turned off.</li>
+      <li>The installed version is shown under Settings → Updates.</li>
+    </ul>
+    <h3>Update notes</h3>
+    <ul>
+      <li>Existing <code>MICROSOFT_*</code> values from the <code>.env</code> file are imported once on first start and can be removed from the <code>.env</code> afterwards.</li>
+      <li>Database changes are purely additive (one new table, one new column).</li>
+    </ul>
+
+    <h2 id="v1-1-1">NetDoc 1.1.1 <small style="font-weight:400;color:var(--dim);font-size:.75em">· <time datetime="2026-10-05">5 October 2026</time></small></h2>
+    <p>First public release. Included: locations, rooms and racks, floor plans, devices with ports and network interfaces, cabling from the wall outlet to the switch port, VLANs and WLANs, software and licenses, encrypted password manager, reminders and deadlines, contracts and suppliers, domain and certificate checks, employees and device handover with PDF protocol, knowledge base, IT emergency handbook as PDF, import from Excel/CSV, export, QR labels, REST API, two-factor authentication, sign-in via Active Directory/LDAP and Microsoft (Entra ID), backup and restore – in German and English.</p>
+
+    <div class="product-box">
+      <h2>Try NetDoc</h2>
+      <p>Free for up to 25 devices, all features, no subscription. Installed in minutes with Docker.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="https://github.com/guschlbauermichael93/getnetdoc-website/releases/latest/download/netdoc.zip">Download the latest release</a>
+        <a class="btn btn-ghost" href="index.html#pricing">See pricing</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 NetDoc · Michael Guschlbauer · Made in Austria</span>
+    <nav>
+      <a href="imprint.html">Imprint</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Purchase &amp; license terms</a>
+      <a href="../changelog.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="mailto:support@getnetdoc.com">support@getnetdoc.com</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

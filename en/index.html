@@ -308,7 +308,7 @@ docker compose up -d</pre>
         </details>
         <details>
           <summary>How do updates work?</summary>
-          <p>With two commands: <code>docker compose pull</code> and <code>docker compose up -d</code>. NetDoc applies database changes automatically on startup. Creating a backup beforehand takes one click under Settings → Backup.</p>
+          <p>NetDoc tells administrators on the dashboard when a new release is available (can be turned off). You install it yourself: set <code>NETDOC_VERSION=</code> in the <code>.env</code> file to the new version, then run <code>docker compose pull</code> and <code>docker compose up -d</code>. NetDoc applies database changes automatically on startup. Creating a backup beforehand takes one click under Settings → Backup. All changes: <a href="changelog.html">Releases</a>.</p>
         </details>
         <details>
           <summary>Is there support?</summary>
@@ -346,6 +346,7 @@ docker compose up -d</pre>
       <a href="imprint.html">Imprint</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Purchase &amp; license terms</a>
+      <a href="changelog.html">Releases</a>
       <a href="mailto:support@getnetdoc.com">support@getnetdoc.com</a>
     </nav>
   </div>
