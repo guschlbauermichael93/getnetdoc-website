@@ -42,6 +42,22 @@
       <p><strong>Update einspielen:</strong> Backup anlegen (Einstellungen → Backup), dann auf dem Server in der Datei <code>.env</code> die Zeile <code>NETDOC_VERSION=</code> auf die neue Version setzen und <code>docker compose pull &amp;&amp; docker compose up -d</code> ausführen. Die Datenbank wird beim Start automatisch angepasst. Details stehen in der <code>INSTALLATION.md</code> im Installationspaket.</p>
     </div>
 
+    <h2 id="v1-3-0">NetDoc 1.3.0 <small style="font-weight:400;color:var(--dim);font-size:.75em">· <time datetime="2026-10-28">28. Oktober 2026</time></small></h2>
+    <h3>Neu</h3>
+    <ul>
+      <li><strong>Bereiche für einzelne Zugangsdaten.</strong> Ein Zugang an einem Gerät kann jetzt eigene Bereiche bekommen – dann sehen ihn nur Mitglieder dieser Bereiche. Beispiel: Die Technik sieht und patcht die Switches, die Switch-Zugänge sind aber nur für die IT sichtbar. Zugänge ohne eigenen Bereich verhalten sich wie bisher. Auch per Massenbearbeitung in der Geräteliste („Zugangsdaten-Bereiche“); wer Zugänge nicht sehen darf, bekommt am Gerät einen Hinweis „ausgeblendet“.</li>
+      <li><strong>Wiederkehrende Termine abhaken mit Rückfrage.</strong> Beim Erledigen fragt NetDoc nach dem nächsten Datum: nach Plan, ab heute oder frei wählbar (z.B. neues Ablaufdatum eines Zertifikats) – oder die Wiederholung wird beendet.</li>
+    </ul>
+    <h3>Verbessert</h3>
+    <ul>
+      <li>VLANs an Ports und Port-Gruppen (LAGs) sind nach Nummer sortiert, auch direkt nach dem Hinzufügen; Verknüpfungen sind nach Typ gruppiert.</li>
+      <li>Das Gerätedetail liefert nur noch die Zugänge mit, die der Benutzer sehen darf.</li>
+    </ul>
+    <h3>Hinweise zum Update</h3>
+    <ul>
+      <li>Datenbank-Änderungen sind rein ergänzend (eine neue Tabelle). Bestehende Zugangsdaten bleiben unverändert sichtbar.</li>
+    </ul>
+
     <h2 id="v1-2-0">NetDoc 1.2.0 <small style="font-weight:400;color:var(--dim);font-size:.75em">· <time datetime="2026-10-16">16. Oktober 2026</time></small></h2>
     <h3>Neu</h3>
     <ul>

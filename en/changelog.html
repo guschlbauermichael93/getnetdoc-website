@@ -42,6 +42,22 @@
       <p><strong>Installing an update:</strong> create a backup (Settings → Backup), then on the server set <code>NETDOC_VERSION=</code> in the <code>.env</code> file to the new version and run <code>docker compose pull &amp;&amp; docker compose up -d</code>. The database is upgraded automatically on startup. Details are in <code>INSTALLATION.md</code> inside the installation package.</p>
     </div>
 
+    <h2 id="v1-3-0">NetDoc 1.3.0 <small style="font-weight:400;color:var(--dim);font-size:.75em">· <time datetime="2026-10-28">28 October 2026</time></small></h2>
+    <h3>New</h3>
+    <ul>
+      <li><strong>Scopes for individual credentials.</strong> A credential on a device can now have its own scopes – then only members of those scopes can see it. Example: the technicians see and patch the switches, but the switch credentials are visible to IT only. Credentials without their own scope behave as before. Also available as a bulk action in the device list (“Credential scopes”); users who cannot see some credentials get a “hidden” notice on the device.</li>
+      <li><strong>Completing recurring reminders asks for the next date.</strong> NetDoc offers the next date as scheduled, counted from today, or any date you choose (e.g. the new certificate expiry) – or you can end the recurrence.</li>
+    </ul>
+    <h3>Improved</h3>
+    <ul>
+      <li>VLANs on ports and port groups (LAGs) are sorted by number, also right after adding them; links are grouped by type.</li>
+      <li>The device detail view only includes credentials the user is allowed to see.</li>
+    </ul>
+    <h3>Update notes</h3>
+    <ul>
+      <li>Database changes are purely additive (one new table). Existing credentials stay visible as before.</li>
+    </ul>
+
     <h2 id="v1-2-0">NetDoc 1.2.0 <small style="font-weight:400;color:var(--dim);font-size:.75em">· <time datetime="2026-10-16">16 October 2026</time></small></h2>
     <h3>New</h3>
     <ul>
