@@ -12,7 +12,10 @@ nicht-exklusive, nicht-übertragbare Recht, die NetDoc-Software ("Software")
 gemäß den Bedingungen dieser Vereinbarung zu nutzen.
 
 Die Lizenz berechtigt zur:
-- Installation auf einem (1) Server
+- Installation auf einem (1) Produktivserver und zusätzlich einem (1)
+  Testsystem
+- Der Lizenzschlüssel wird beim Eintragen einmalig online aktiviert
+  (alternativ offline über einen anderen Rechner)
 - Nutzung durch unbegrenzte Benutzer innerhalb Ihrer Organisation
 - Verwaltung von Geräten bis zum lizenzierten Limit
 
@@ -50,10 +53,13 @@ GEZAHLTEN BETRAG BESCHRÄNKT.
 
 6. DATENSCHUTZ
 
-Die Software speichert alle Daten lokal auf Ihrem Server. Es werden
-keine Daten an den Lizenzgeber übermittelt; der Lizenzschlüssel wird
-lokal geprüft. Verbindungen zu Dritten entstehen nur durch Funktionen,
-die Sie selbst einrichten (z.B. E-Mail-Versand, Prüfung von
+Die Software speichert alle Daten lokal auf Ihrem Server. Inhalte
+werden nicht an den Lizenzgeber übermittelt. Bei der einmaligen
+Aktivierung des Lizenzschlüssels werden Schlüssel, eine zufällige
+Installations-ID und die Versionsnummer an den Lizenzgeber übermittelt
+(Details: Datenschutzerklärung auf getnetdoc.com); danach wird der
+Schlüssel lokal geprüft. Verbindungen zu Dritten entstehen nur durch
+Funktionen, die Sie selbst einrichten (z.B. E-Mail-Versand, Prüfung von
 SSL-Zertifikaten und Domains).
 
 7. BEENDIGUNG
