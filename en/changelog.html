@@ -42,6 +42,31 @@
       <p><strong>Installing an update:</strong> create a backup (Settings → Backup), then on the server set <code>NETDOC_VERSION=</code> in the <code>.env</code> file to the new version and run <code>docker compose pull &amp;&amp; docker compose up -d</code>. The database is upgraded automatically on startup. Details are in <code>INSTALLATION.md</code> inside the installation package.</p>
     </div>
 
+    <h2 id="v1-6-0">NetDoc 1.6.0 <small style="font-weight:400;color:var(--dim);font-size:.75em">· <time datetime="2026-11-06">6 November 2026</time></small></h2>
+    <h3>New</h3>
+    <ul>
+      <li><strong>Responsibilities.</strong> Devices, device groups, software, locations, contracts, suppliers, VLANs and Wi-Fi networks can now record who is responsible – an employee or a department as owner, deputy, business or technical contact. The employee page lists what someone is responsible for, with “Transfer” to another person or department. If an owner leaves and no active deputy remains, the dashboard points it out. “Responsible” filter in the device, software and contract lists, and a new section in the emergency handbook. Being responsible grants no permissions.</li>
+      <li><strong>Departments.</strong> Under Employees → Departments, with an optional shared address (e.g. it@company.com); suggestions come from the employees’ departments or Entra ID.</li>
+      <li><strong>Reminder e-mails to responsible people.</strong> Optional (Settings → Notifications): owners and deputies additionally receive the due reminders of their assets as a personal e-mail, departments at their shared address.</li>
+      <li><strong>Credentials in vaults.</strong> A credential on a device or software can be assigned to a vault. Its members then see it in the password manager – the same password, no copy – even without access to the device itself.</li>
+      <li><strong>Linked passwords.</strong> “Linkable in password manager” is now switched on directly on the device or software (credentials section) – no credential is needed for it anymore. Users link their own passwords to it; on the asset they are listed under “Linked passwords” (visible only to those allowed to see the entry anyway).</li>
+    </ul>
+    <h3>Improved</h3>
+    <ul>
+      <li>Password manager: entries without a shared vault are now shown as “My vault”.</li>
+      <li>Software: installations and managed devices only count devices the user may see; empty sections are hidden.</li>
+      <li>Reminders and knowledge only appear on detail pages when there is something to show (or via “show empty sections”); no more error without permission to view reminders.</li>
+    </ul>
+    <h3>Fixed</h3>
+    <ul>
+      <li>Backup: a database password containing “%” made the backup fail.</li>
+    </ul>
+    <h3>Update notes</h3>
+    <ul>
+      <li>Please create a backup first (Settings → Backup). The database is extended; the former “Linkable in password manager” checkbox on individual credentials is moved to the device or software automatically, existing links are kept.</li>
+      <li>Reminder e-mails to responsible people are switched off after the update.</li>
+    </ul>
+
     <h2 id="v1-5-0">NetDoc 1.5.0 <small style="font-weight:400;color:var(--dim);font-size:.75em">· <time datetime="2026-11-05">5 November 2026</time></small></h2>
     <h3>New</h3>
     <ul>
